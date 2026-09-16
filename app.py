@@ -70,7 +70,7 @@ if schedule_file and prayer_file:
         if st.button("🚀 AI 데이터 추출 시작", type="primary"):
             with st.spinner("제미나이가 이미지를 읽고 있습니다... (약 10초 소요)"):
                 try:
-                    model = genai.GenerativeModel('gemini-1.5-flash')
+                    model = genai.GenerativeModel('gemini-1.5-flash-latest')
                     
                     # 수기 당번표 분석
                     img_schedule = Image.open(schedule_file)
